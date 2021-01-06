@@ -11,7 +11,7 @@ alias vm='f(){ cp ~/code/temp.cpp $1.cpp && vim $1.cpp; unset -f f; }; f'
 alias gm='f(){ cp ~/code/temp.cpp $1.cpp && geany $1.cpp; unset -f f; }; f'
 alias comp='f(){ g++ -std=c++17 -O2 -W $1 -o ${1//.cpp}; unset -f f; }; f'
 
-alias cparse='~/scripts/parser.py'
+alias cparse='~/scripts/cparser.py'
 alias run='~/scripts/run_samples.sh'
 alias ain='~/scripts/add_test_in.sh'
 alias aout='~/scripts/add_test_out.sh'
