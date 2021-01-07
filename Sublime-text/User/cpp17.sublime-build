@@ -1,0 +1,19 @@
+{
+    "shell_cmd": "g++ -std=c++17 -O2 -g -Wall -Wshadow -DLOCAL \"${file}\" -o \"${file_path}/${file_base_name}\"",
+    // "shell_cmd": "g++ -std=c++17 -O2 -g -Wall -Wshadow -DLOCAL ${file_base_name}.cc -o ${file_base_name} -Wno-unused-result",
+    "working_dir": "$file_path",
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "selector": "source.c++, source.cpp, source.cc, source.cxx",
+    "variants":
+    [
+        {
+            "name": "Sanitizers",
+
+            "linux": {
+                "shell_cmd": "g++ -std=c++17 -Wall -Wshadow -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG -DLOCAL \"${file}\" -o \"${file_path}/${file_base_name}\"",
+            },
+
+            "shell": true,
+        },
+    ]
+}

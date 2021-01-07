@@ -1,0 +1,21 @@
+{
+   "lint_enabled": false,
+
+	 "run_settings": [
+    {
+      "name": "C++",
+      "extensions": ["cpp"],
+      "compile_cmd": "g++ -std=c++17 -Wall -Wshadow -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG -DLOCAL '{source_file}' -o {file_name}",
+      "run_cmd": "./\"{file_name}\" {args} -debug",
+
+      "lint_compile_cmd": "g++ -std=gnu++11 '{source_file}' -I '{source_file_dir}'"
+    },
+
+    {
+      "name": "Python",
+      "extensions": ["py"],
+      "compile_cmd": null,
+      "run_cmd": "python '{source_file}'"
+    },
+  ],
+}

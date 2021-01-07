@@ -1,0 +1,37 @@
+<snippet>
+    <content><![CDATA[
+
+const int64_t MOD = ${0};
+
+int64_t add(int64_t x, int64_t y) {
+    x += y;
+    if (x >= MOD) return x - MOD;
+    return x;
+}
+
+int64_t sub(int64_t x, int64_t y) {
+    x -= y;
+    if (x < 0) return x + MOD;
+    return x;
+}
+
+int64_t mul(int64_t x, int64_t y) {
+    return (x * y) % MOD;
+}
+
+int64_t bin_pow(int64_t x, int64_t p) {
+    if (p == 0) return 1;
+    if (p & 1) return mul(x, bin_pow(x, p - 1));
+    return bin_pow(mul(x, x), p / 2);
+}
+
+int64_t inv(int64_t x) {
+    return bin_pow(x, MOD - 2);
+}
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mint</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.c++</scope>
+</snippet>
