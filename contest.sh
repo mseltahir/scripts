@@ -11,6 +11,6 @@ done
 
 for Problem in *; do
     cd $Problem
-    cp ~/code/temp.cpp sol.cpp
+    cp ~/code/temp.cc sol.cc
     cd ..
 done

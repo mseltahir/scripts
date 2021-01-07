@@ -20,7 +20,7 @@ if [ "$EXECUTABLES" != "" ]
         echo -e "${RED}No binaries.${ENDCOLOR}"
 fi
 
-MY_OUTPUT=$(find . -name "*.myout")
+MY_OUTPUT=$(find $CURRENT_DIR -name "*.myout")
 if [ "$MY_OUTPUT" != "" ]
     then
         rm $MY_OUTPUT
