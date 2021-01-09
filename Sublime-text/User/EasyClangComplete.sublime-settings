@@ -6,7 +6,7 @@
         "OBJECTIVE_CPP": ["-std=c++17"],
     },
     "gutter_style": "dot",
-    "linter_mark_style": "solid_underline",
+    "linter_mark_style": "none",
     "valid_lang_syntaxes": {
         "C":              ["C", "C Improved", "C99"],
         "CPP":            ["C++", "C++17"],
