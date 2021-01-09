@@ -29,7 +29,7 @@ def createDirectory(data):
     problem_file = os.getcwd() + '/' + data['name'][0] + '.cc'
     with open(problem_file, 'w') as f:
         f.write(
-            '''#include <bits/stdc++.h>\n\nusing namespace std;\n\nint main() {\n    ios::sync_with_stdio(false), cin.tie(nullptr);\n\n    return 0;\n}\n'''
+            '''#include <bits/stdc++.h>\n\nusing namespace std;\n\nint main() {\n  ios::sync_with_stdio(false);\n  cin.tie(nullptr);\n\n  return 0;\n}\n'''
         )
 
     tests = data['tests']
