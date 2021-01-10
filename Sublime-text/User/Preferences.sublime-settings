@@ -71,6 +71,7 @@
 	"font_size": 12,
 	"ignored_packages":
 	[
+		"EasyClangComplete",
 		"Vintage"
 	],
 	"line_padding_bottom": 2,

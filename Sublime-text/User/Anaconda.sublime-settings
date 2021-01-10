@@ -1,3 +1,4 @@
 {
     "anaconda_linter_mark_style": "none",
+    "anaconda_linting": false,
 }
