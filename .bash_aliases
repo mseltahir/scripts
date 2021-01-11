@@ -12,6 +12,8 @@ alias gm='f(){ cp ~/code/temp.cc $1.cc && geany $1.cc; unset -f f; }; f'
 alias comp='f(){ g++ -std=c++17 -O2 -W $1 -o ${1//.cc}; unset -f f; }; f'
 
 alias cparse='~/scripts/cparser.py'
+alias pfname='~/scripts/parse_full_name.py'
+alias psamples='~/scripts/parse_samples.py'
 alias run='~/scripts/run_samples.sh'
 alias ain='~/scripts/add_test_in.sh'
 alias aout='~/scripts/add_test_out.sh'
