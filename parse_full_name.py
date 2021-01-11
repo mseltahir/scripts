@@ -25,7 +25,7 @@ def make_app():
     ])
 
 def createDirectory(data):
-
+    data['name'] = data['name'].replace(' ', '')
     problem_file = os.getcwd() + '/' + data['name'] + '.cc'
     with open(problem_file, 'w') as f:
         f.write(

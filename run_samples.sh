@@ -18,7 +18,7 @@ for INPUT in $EXECUTABLE*.in
 do
     echo -e "${GRAY}Running test ${TEST} ${ENDCOLOR}"
 
-    N_TEST=${INPUT:2:1}
+    N_TEST=${INPUT:(-4):1}
     MY_OUTPUT="$CURRENT_DIR/$EXECUTABLE-$N_TEST.myout"
     EXPECTED_OUTPUT="$EXECUTABLE-${N_TEST}.out"
 
