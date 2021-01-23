@@ -13,5 +13,5 @@
         "OBJECTIVE_C":    ["Objective-C"],
         "OBJECTIVE_CPP":  ["Objective-C++"]
     },
-
+  "show_errors": false,
 }

@@ -6,7 +6,6 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
-		"Anaconda",
 		"EasyClangComplete",
 		"Package Control",
 		"SublimeLinter",
