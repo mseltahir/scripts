@@ -2,6 +2,5 @@
   { "keys": ["f9"], "command": "build" },
   { "keys": ["f8"], "command": "build", "args": {"select": true} },
   { "keys": ["f1"], "command": "toggle_menu" },
-  { "keys": ["alt+n"], "command": "advanced_new_file_new"},
   { "keys": ["ctrl+k"], "command": "toggle_side_bar" },
 ]

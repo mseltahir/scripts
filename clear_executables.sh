@@ -20,11 +20,11 @@ if [ "$EXECUTABLES" != "" ]
         echo -e "${RED}No binaries.${ENDCOLOR}"
 fi
 
-MY_OUTPUT=$(find $CURRENT_DIR -name "*.myout")
-if [ "$MY_OUTPUT" != "" ]
-    then
-        rm $MY_OUTPUT
-        echo -e "${GREEN}Output files cleared successfully.${ENDCOLOR}"
-    else
-        echo -e "${RED}No output files.${ENDCOLOR}"
-fi
+# MY_OUTPUT=$(find $CURRENT_DIR -name "*.myout")
+# if [ "$MY_OUTPUT" != "" ]
+#     then
+#         rm $MY_OUTPUT
+#         echo -e "${GREEN}Output files cleared successfully.${ENDCOLOR}"
+#     else
+#         echo -e "${RED}No output files.${ENDCOLOR}"
+# fi
